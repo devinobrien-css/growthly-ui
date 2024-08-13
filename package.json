@@ -39,7 +39,7 @@
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
-    "@iconify/react": "^4.0.0",
+    "@iconify/react": "^4.1.1",
     "@tanstack/eslint-plugin-query": "^4.34.1",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^15.0.0",
