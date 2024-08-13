@@ -1,9 +1,9 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Landing } from '../../pages/landing/Landing';
-import { Components } from '../../components/components';
-import { Typography } from '../../components/docs/typography';
-import { Buttons } from '../../components/docs/buttons';
-import { Inputs } from '../../components/docs/inputs';
+import { Landing } from '../pages/landing/Landing';
+import { Components } from '../components/Components';
+import { Typography } from '../components/docs/Typography';
+import { Buttons } from '../components/docs/Buttons';
+import { Inputs } from '../components/docs/Inputs';
 
 const router = createBrowserRouter([
   {
