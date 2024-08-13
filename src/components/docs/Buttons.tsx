@@ -1,7 +1,7 @@
 import gsap from 'gsap';
 import { useEffect } from 'react';
-import { AnchorLink } from '../buttons/anchorLink';
-import { Button } from '../buttons/button';
+import { AnchorLink } from '../buttons/AnchorLink';
+import { Button } from '../buttons/Button';
 
 export const Buttons = () => {
   useEffect(() => {

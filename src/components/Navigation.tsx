@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import gsap from 'gsap';
-import { Button } from './buttons/button';
+import { Button } from './buttons/Button';
 
 export const Navigation = () => {
   useEffect(() => {
