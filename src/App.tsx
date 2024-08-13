@@ -1,12 +1,14 @@
 import { ToastContainer } from 'react-toastify';
 import { initializeChartConfig } from './util/chart.config';
-import { Router } from './util/router/Router';
+import { Router } from './util/Router';
+import { Navigation } from './components/Navigation';
 
 initializeChartConfig();
 
 const App = (): JSX.Element => {
   return (
     <>
+      <Navigation />
       <Router />
       <ToastContainer
         newestOnTop
