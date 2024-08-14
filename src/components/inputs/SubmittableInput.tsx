@@ -13,6 +13,7 @@ export const SubmittableInput = ({
   children,
   className,
   placeholder,
+  onSubmit,
   ...rest
 }: SubmittableInputProps) => {
   const id = `submittable-input-${Math.random().toString(36).slice(2)}`;
@@ -39,25 +40,27 @@ export const SubmittableInput = ({
     <form
       {...rest}
       id={animate ? id : undefined}
+      onSubmit={onSubmit}
       className={cx(
-        'flex rounded border border-gray-400 bg-white p-2',
+        'flex justify-between rounded border border-gray-300 bg-white p-2',
         className,
         {
           'scale-95 opacity-0': animate,
+          'w-fit': !className,
         },
       )}
     >
       <input
         placeholder={placeholder}
         className={cx(
-          'px-4 py-2 font-light transition duration-300 ease-in-out',
+          'w-2/3 px-4 py-2 font-light transition duration-300 ease-in-out',
           'outline-0',
         )}
       />
       <button
         className={cx(
-          'px-4 py-2 font-semibold transition duration-300 ease-in-out',
-          'rounded bg-blue-700 text-white hover:bg-blue-800 active:bg-blue-600',
+          'whitespace-nowrap px-4 py-2 font-semibold transition duration-300 ease-in-out',
+          'max-w-1/3 rounded bg-blue-700 text-xs text-white hover:bg-blue-800 active:bg-blue-600',
         )}
       >
         {children}
