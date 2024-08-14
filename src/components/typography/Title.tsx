@@ -3,10 +3,11 @@ import cx from 'classnames';
 import gsap from 'gsap';
 
 export interface TitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
-  children: string;
+  className?: string;
+  children: string | React.ReactNode;
   size: 'sm' | 'md' | 'lg' | 'xl';
 }
-export const Title = ({ children, size, ...rest }: TitleProps) => {
+export const Title = ({ className, children, size, ...rest }: TitleProps) => {
   const id = `title-${Math.random().toString(36).slice(2)}`;
 
   useEffect(() => {
@@ -21,8 +22,8 @@ export const Title = ({ children, size, ...rest }: TitleProps) => {
   return (
     <h1
       id={id}
-      className={cx('text-lg font-semibold', {
-        'text-4xl': size === 'xl',
+      className={cx(className, 'font-semibold transition-all', {
+        'text-3xl sm:text-5xl': size === 'xl',
         'text-2xl': size === 'lg',
         'text-xl': size === 'md',
         'text-lg': size === 'sm',

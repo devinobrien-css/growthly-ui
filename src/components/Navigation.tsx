@@ -17,9 +17,9 @@ export const Navigation = () => {
   });
 
   return (
-    <nav className='mx-auto max-w-screen-xl p-4 opacity-0'>
+    <nav className='relative z-[999] mx-auto max-w-screen-lg p-4 opacity-0'>
       <div className='flex justify-between'>
-        <div className='flex gap-4 [&>*]:my-auto'>
+        <div className='flex gap-8 [&>*]:my-auto'>
           <a href='/' className='font-semibold transition hover:scale-105 '>
             <img src='/assets/logo.svg' alt='Logo' className='mr-4' />
           </a>
@@ -61,7 +61,7 @@ export const Navigation = () => {
           <Icon
             icon='solar:hamburger-menu-linear'
             width={48}
-            className='m-auto'
+            className='m-auto transition hover:scale-105'
           />
         </button>
         {isNavOpen && <MobileNavigation closeNav={toggleNav} />}
@@ -97,7 +97,7 @@ const MobileNavigation = ({ closeNav }: MobileNavigationProps) => {
   };
 
   return (
-    <div className='fixed left-0 top-0 z-50 flex h-screen w-full flex-col bg-gray-200 bg-opacity-30 p-10 backdrop-blur-sm'>
+    <div className='fixed left-0 top-0 z-[1000] flex h-screen w-full flex-col bg-gray-200 bg-opacity-30 p-10 backdrop-blur-sm'>
       <div
         id='mobile-nav'
         className='my-auto scale-75 rounded bg-white opacity-0 transition-all ease-in-out'
@@ -110,7 +110,7 @@ const MobileNavigation = ({ closeNav }: MobileNavigationProps) => {
             <Icon
               icon='solar:close-square-broken'
               width={48}
-              className='m-auto'
+              className='m-auto text-gray-600 transition hover:scale-105'
             />
           </button>
         </div>
