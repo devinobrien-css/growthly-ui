@@ -10,7 +10,7 @@ export const HeroSection = () => {
     gsap.fromTo(
       '#landing-hero img',
       {
-        x: 100,
+        x: 50,
         opacity: 0,
         duration: 1,
         delay: 0,
@@ -26,7 +26,7 @@ export const HeroSection = () => {
     gsap.fromTo(
       '#landing-hero .z-10',
       {
-        x: -100,
+        x: -50,
         opacity: 0,
         duration: 1,
         delay: 0,
@@ -41,7 +41,7 @@ export const HeroSection = () => {
   });
 
   return (
-    <div id='landing-hero' className='relative flex'>
+    <div id='landing-hero' className='relative flex overflow-x-clip px-6 py-24'>
       <div className='z-10 w-full md:w-1/2'>
         <Title className='mb-4 sm:whitespace-nowrap' size='xl'>
           AI-Powered <br className='block sm:hidden' /> pattern <br />

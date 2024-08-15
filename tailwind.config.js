@@ -21,7 +21,8 @@ module.exports = {
         'oxford-blue': '#101935',
       },
       backgroundImage: {
-
+        footer: "url('/assets/footer-bg.svg')",
+        blue: "url('/assets/blue-bg.svg')",
       },
       transitionProperty: {
         height: 'height',
