@@ -13,10 +13,10 @@ export const Footer = () => {
           <div className='text-center sm:text-left'>
             <Title size='xl'>Ready to get started?</Title>
 
-            <Paragraph className='my-4 text-sm text-gray-400 md:w-1/3'>
+            <p className='my-4 text-sm text-gray-400 md:w-1/3'>
               Seamless integration into your workflow to test, prototype and
               finalize designs.
-            </Paragraph>
+            </p>
           </div>
           <SubmittableInput
             placeholder='Email'
