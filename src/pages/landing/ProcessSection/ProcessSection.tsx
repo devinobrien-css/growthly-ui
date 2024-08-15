@@ -32,7 +32,7 @@ export const ProcessSection = () => {
       id='landing-process'
       threshold={0.3}
       onChange={(inView) => setIsInView(inView)}
-      className='relative my-0 pb-24 sm:my-64 md:my-0'
+      className='relative my-0 p-6 pb-32 sm:my-64 md:my-0 md:pb-64'
     >
       <Title className='text-center sm:mb-4 sm:whitespace-nowrap' size='xl'>
         Create patterns easier <br /> than ever before
