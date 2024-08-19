@@ -18,7 +18,7 @@ export const FeaturesSection = () => {
         { opacity: 1, y: 0, duration: 1, ease: 'power2.out' },
       );
     } else {
-      gsap.set('#landing-features', { opacity: 0, y: 50 });
+      gsap.fromTo('#landing-features', {}, { opacity: 0, y: 50 });
     }
   }, [isInView]);
 

@@ -38,7 +38,7 @@ export const FeaturesCard = ({
         },
       );
     } else {
-      gsap.set(`#${id}`, { opacity: 0 });
+      gsap.fromTo(`#${id}`, {}, { opacity: 0 });
     }
   }, [isInView]);
 
