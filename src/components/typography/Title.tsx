@@ -24,7 +24,7 @@ export const Title = ({ className, children, size, ...rest }: TitleProps) => {
       id={id}
       className={cx(className, 'font-semibold transition-all', {
         'text-3xl sm:text-[44px]': size === 'xl',
-        'text-2xl': size === 'lg',
+        'text-xl sm:text-2xl': size === 'lg',
         'text-xl': size === 'md',
         'text-lg': size === 'sm',
       })}
