@@ -15,7 +15,7 @@ export const BenefitsSection = () => {
       id='landing-process'
       threshold={0.3}
       onChange={(inView) => setIsInView(inView)}
-      className='relative flex gap-8 p-8 py-16 md:p-0'
+      className='relative flex gap-8 overflow-clip p-8 py-16 md:p-0'
     >
       <BenefitsImage isInView={isInView} className='hidden w-1/2 md:block' />
       <div className='md:w-1/2'>

@@ -1,5 +1,7 @@
 import { Footer } from '../../components/Footer';
 import { BenefitsSection } from './BenefitsSection/BenefitsSection';
+import { FeaturesSection } from './FeaturesSection/FeatruesSection';
+import { GlobalSection } from './GlobalSection/GlobalSection';
 import { HeroSection } from './HeroSection';
 import { ProcessSection } from './ProcessSection/ProcessSection';
 
@@ -10,6 +12,8 @@ export const Landing = () => {
         <HeroSection />
         <ProcessSection />
         <BenefitsSection />
+        <FeaturesSection />
+        <GlobalSection />
         <br />
       </div>
       <Footer />
