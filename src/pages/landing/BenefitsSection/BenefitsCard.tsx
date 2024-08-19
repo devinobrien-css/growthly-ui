@@ -33,7 +33,7 @@ export const BenefitsCard = ({
         },
       );
     } else {
-      gsap.set(`#${id}`, { opacity: 0, x: 50 });
+      gsap.fromTo(`#${id}`, {}, { opacity: 0, x: 50 });
     }
   }, [isInView]);
 
