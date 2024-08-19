@@ -76,6 +76,17 @@ export const PatternImage = ({ isInView, className }: SvgImageProps) => {
             },
           );
         });
+
+      gsap.fromTo(
+        '#plotted-line path',
+        {
+          strokeDashoffset: 0,
+        },
+        {
+          strokeDashoffset: 1000,
+          duration: 3,
+        },
+      );
     } else {
       gsap.fromTo(
         '#column-1',
@@ -147,6 +158,17 @@ export const PatternImage = ({ isInView, className }: SvgImageProps) => {
           duration: 0.5,
         },
       );
+
+      gsap.fromTo(
+        '#plotted-line path',
+        {
+          strokeDashoffset: 1000,
+        },
+        {
+          strokeDashoffset: 0,
+          duration: 3,
+        },
+      );
     }
   }, [isInView]);
 
@@ -208,7 +230,7 @@ export const PatternImage = ({ isInView, className }: SvgImageProps) => {
 
       <g filter='url(#filter3_d_201_8030)'>
         <rect x='34' y='14' width='58' height='58' rx='6' fill='white' />
-        <g id='plotted-line' className='overflow-clip'>
+        <g id='plotted-line'>
           <path
             d='M28 55.5977C28 55.5977 35.2663 44.5281 42.8966 43.0687C50.5268 41.6094 50.0345 52.2245 54.3172 49.8151C58.6 47.4057 60.5852 34.5944 65.7379 31.9855C71.4483 29.0942 73.7599 43.4728 80.1379 38.7318C87.9172 32.9493 100 33.9131 100 33.9131'
             stroke='#FFD43D'

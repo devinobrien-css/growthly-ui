@@ -32,7 +32,7 @@ export const ProcessSection = () => {
       id='landing-process'
       threshold={0.3}
       onChange={(inView) => setIsInView(inView)}
-      className='relative my-0 p-6 pb-32 sm:my-64 md:my-0 md:pb-64'
+      className='relative my-0 p-6 pb-32 sm:my-64 md:my-0'
     >
       <Title className='text-center sm:mb-4 sm:whitespace-nowrap' size='xl'>
         Create patterns easier <br /> than ever before
@@ -75,10 +75,10 @@ const Tilda = () => {
       <path
         d='M1 14.8897C1 14.8897 32.5273 31.9741 65.7841 9.86112C99.0408 -12.2518 151 14.8896 151 14.8896'
         stroke='#6241D4'
-        stroke-width='2'
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        stroke-dasharray='4 8'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeDasharray='4 8'
       />
     </svg>
   );
