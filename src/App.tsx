@@ -8,7 +8,6 @@ initializeChartConfig();
 const App = (): JSX.Element => {
   return (
     <>
-      <Navigation />
       <Router />
       <ToastContainer
         newestOnTop

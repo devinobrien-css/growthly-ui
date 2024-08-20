@@ -22,7 +22,6 @@ export const FeaturesCard = ({
   image,
   title,
   description,
-  url,
 }: FeaturesCardProps) => {
   const id = `${title.toLowerCase().split(' ').join('-').replace('&', '')}-card`;
 
@@ -48,7 +47,7 @@ export const FeaturesCard = ({
         `#${id}-content`,
         { height: 0, opacity: 0, transformOrigin: 'bottom' },
         {
-          height: 80,
+          height: 'auto',
           opacity: 1,
           duration: 1,
         },
@@ -72,10 +71,10 @@ export const FeaturesCard = ({
         <Title size='sm'>{title}</Title>
       </div>
       <div id={id + '-content'} className='overflow-y-clip pt-2'>
-        <Paragraph className='pb-2 text-sm'>{description}</Paragraph>
-        <a href={url} className='text-blue-500 underline'>
+        <Paragraph className='h-fit pb-2 text-sm'>{description}</Paragraph>
+        {/* <a href={url} className='text-blue-500 underline'>
           Learn More
-        </a>
+        </a> */}
       </div>
     </button>
   );

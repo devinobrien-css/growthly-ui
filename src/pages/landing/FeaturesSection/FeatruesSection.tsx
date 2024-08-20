@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Paragraph } from '../../../components/typography/Paragraph';
 import { Title } from '../../../components/typography/Title';
 import { FeaturesData } from './assets/FeaturesData';
 import { FeaturesCard } from './FeaturesCard';
@@ -28,7 +27,7 @@ export const FeaturesSection = () => {
       id='landing-features'
       threshold={0.3}
       onChange={(inView) => setIsInView(inView)}
-      className='relative flex gap-8 overflow-clip px-6 py-16 md:px-0'
+      className='relative flex gap-8 overflow-x-clip px-6 pt-24 md:px-0'
     >
       <div className='md:w-1/2'>
         <Title size='xl' className='mb-4'>

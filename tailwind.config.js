@@ -18,7 +18,7 @@ module.exports = {
       keyframes: {},
       animation: {},
       colors: {
-        'oxford-blue': '#101935',
+        'pricing-blue': '#5243C2',
       },
       backgroundImage: {
         footer: "url('/assets/footer-bg.svg')",

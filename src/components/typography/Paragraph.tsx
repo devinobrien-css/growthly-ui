@@ -7,7 +7,7 @@ export const Paragraph = ({
 }: React.HTMLAttributes<HTMLParagraphElement>) => {
   return (
     <p
-      className={cx(className, 'text-base font-light text-gray-600')}
+      className={cx('text-base font-light text-gray-600', className)}
       {...rest}
     >
       {children}
