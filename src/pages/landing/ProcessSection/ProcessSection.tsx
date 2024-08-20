@@ -1,13 +1,10 @@
 import gsap from 'gsap';
 import { ProcessCard } from './ProcessCard';
-import { useEffect, useState } from 'react';
-import { InView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 import { processCardsSet } from './data/ProcessCardSet';
 import { Title } from '../../../components/typography/Title';
 
 export const ProcessSection = () => {
-  const [isInView, setIsInView] = useState(false);
-
   useEffect(() => {
     gsap.fromTo(
       '#landing-process',
@@ -27,11 +24,8 @@ export const ProcessSection = () => {
   }, []);
 
   return (
-    <InView
-      as='div'
+    <div
       id='landing-process'
-      threshold={0.3}
-      onChange={(inView) => setIsInView(inView)}
       className='relative my-0 p-6 pb-32 sm:my-64 md:my-0'
     >
       <Title className='text-center sm:mb-4 sm:whitespace-nowrap' size='xl'>
@@ -40,27 +34,24 @@ export const ProcessSection = () => {
 
       <div className='flex flex-col justify-evenly transition sm:flex-row'>
         <ProcessCard
-          isInView={isInView}
           title={processCardsSet[0].title}
           description={processCardsSet[0].description}
           Image={processCardsSet[0].Image}
         />
         <Tilda />
         <ProcessCard
-          isInView={isInView}
           title={processCardsSet[1].title}
           description={processCardsSet[1].description}
           Image={processCardsSet[1].Image}
         />
         <Tilda />
         <ProcessCard
-          isInView={isInView}
           title={processCardsSet[2].title}
           description={processCardsSet[2].description}
           Image={processCardsSet[2].Image}
         />
       </div>
-    </InView>
+    </div>
   );
 };
 

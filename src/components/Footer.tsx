@@ -35,7 +35,7 @@ export const Footer = () => {
               Effortlessly prototype and focus on creativity, not complexity.
             </p>
 
-            <div className='flex flex-row flex-wrap justify-between gap-8 md:flex-nowrap'>
+            <div className='flex h-0 flex-row flex-wrap justify-between gap-8 overflow-clip md:flex-nowrap'>
               <div className='flex flex-col gap-4 md:mx-4'>
                 <Title size='sm' className='text-white'>
                   Product
@@ -135,7 +135,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='mx-auto flex max-w-screen-lg justify-end gap-6 px-8 pb-8'>
+      <div className='mx-auto flex max-w-screen-lg justify-end gap-6 px-8'>
         <a href='#' className='text-gray-400 transition hover:scale-110'>
           <img src='/assets/instagram.svg' alt='instagram' />
         </a>
@@ -145,6 +145,11 @@ export const Footer = () => {
         <a href='#' className='text-gray-400 transition hover:scale-110'>
           <img src='/assets/linkedin.svg' alt='linkedin' />
         </a>
+      </div>
+      <div className='p-8'>
+        <p className='mx-auto max-w-screen-lg border-t border-gray-400 pt-4 text-center font-light text-gray-400'>
+          © 2024 GrowthlyAI. All Right Reserved
+        </p>
       </div>
     </footer>
   );

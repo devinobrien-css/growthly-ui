@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { Button } from './buttons/Button';
 import { Icon } from '@iconify/react';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -20,40 +21,31 @@ export const Navigation = () => {
     <nav className='relative z-[999] mx-auto max-w-screen-lg p-4 opacity-0'>
       <div className='flex justify-between'>
         <div className='flex gap-8 [&>*]:my-auto'>
-          <a href='/' className='font-semibold transition hover:scale-105 '>
+          <Link to='/' className='font-semibold transition hover:scale-105 '>
             <img src='/assets/logo.svg' alt='Logo' className='mr-4' />
-          </a>
-          <a
-            href='#'
+          </Link>
+          <Link
+            to='/pricing'
             className='hidden font-semibold transition hover:scale-105 md:block'
           >
             Pricing
-          </a>
-          <a
-            href='#'
-            className='hidden font-semibold transition hover:scale-105 md:block'
-          >
-            Resources Center
-          </a>
-          <a
-            href='#'
-            className='hidden font-semibold transition hover:scale-105 md:block'
-          >
-            About
-          </a>
-          <a
-            href='#'
+          </Link>
+          <Link
+            to='/pricing'
             className='hidden font-semibold transition hover:scale-105 md:block'
           >
             Contact
-          </a>
+          </Link>
         </div>
 
         <div className='hidden gap-4 md:flex'>
-          <Button color='clear' onClick={() => alert('placeholder')}>
+          {/* <Button color='clear' onClick={() => alert('placeholder')}>
             Login
-          </Button>
-          <Button color='blue' onClick={() => alert('placeholder')}>
+          </Button> */}
+          <Button
+            color='blue'
+            onClick={() => (window.location.href = '/pricing')}
+          >
             Sign Up
           </Button>
         </div>
@@ -103,9 +95,13 @@ const MobileNavigation = ({ closeNav }: MobileNavigationProps) => {
         className='my-auto scale-75 rounded bg-white opacity-0 transition-all ease-in-out'
       >
         <div className='flex justify-between p-4'>
-          <a href='/' className='font-semibold transition hover:scale-105'>
+          <Link
+            to='/'
+            onClick={onClose}
+            className='font-semibold transition hover:scale-105'
+          >
             <img src='/assets/logo.svg' alt='Logo' className='mr-4' />
-          </a>
+          </Link>
           <button onClick={onClose}>
             <Icon
               icon='solar:close-square-broken'
@@ -116,17 +112,22 @@ const MobileNavigation = ({ closeNav }: MobileNavigationProps) => {
         </div>
         <hr className='mx-auto w-11/12' />
         <div className='mx-auto flex w-11/12 flex-col gap-4 p-4'>
-          <a href='#'>Pricing</a>
-          <a href='#'>Resources Center</a>
-          <a href='#'>About</a>
-          <a href='#'>Contact</a>
+          <Link to='/pricing' onClick={onClose}>
+            Pricing
+          </Link>
+          <Link to='/pricing' onClick={onClose}>
+            Contact
+          </Link>
         </div>
         <hr className='mx-auto w-11/12' />
         <div className='flex justify-center gap-4 p-4'>
-          <Button color='clear' onClick={() => alert('placeholder')}>
+          {/* <Button color='clear' onClick={() => alert('placeholder')}>
             Login
-          </Button>
-          <Button color='blue' onClick={() => alert('placeholder')}>
+          </Button> */}
+          <Button
+            color='blue'
+            onClick={() => (window.location.href = '/pricing')}
+          >
             Sign Up
           </Button>
         </div>
