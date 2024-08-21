@@ -1,11 +1,11 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Landing } from '../pages/Landing/Landing';
 import { Components } from '../components/Components';
 import { Typography } from '../components/docs/Typography';
 import { Buttons } from '../components/docs/Buttons';
 import { Inputs } from '../components/docs/Inputs';
 import { Pricing } from '../pages/Pricing/Pricing';
 import { Root } from '../pages/Root';
+import { Landing } from '../pages/Landing/Landing';
 
 const router = createBrowserRouter([
   {
