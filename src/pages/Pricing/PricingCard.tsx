@@ -54,9 +54,9 @@ export const PricingCard = ({
     <button
       id={id}
       className={cx(
-        'relative flex flex-col gap-1 overflow-hidden rounded-lg bg-white p-6 md:gap-4',
+        'relative flex flex-col gap-1 overflow-hidden rounded-lg p-6 md:gap-4',
         {
-          'bg-blue-800 text-white': isSelected,
+          'bg-blue-700 text-white': isSelected,
         },
       )}
       onClick={() => setSelectedCard()}
