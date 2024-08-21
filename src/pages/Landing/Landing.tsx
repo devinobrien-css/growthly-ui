@@ -14,7 +14,6 @@ export const Landing = () => {
         <BenefitsSection />
         <FeaturesSection />
         <GlobalSection />
-        <br />
       </div>
       <Footer />
     </>
