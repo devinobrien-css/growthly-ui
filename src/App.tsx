@@ -13,7 +13,7 @@ const App = (): JSX.Element => {
         newestOnTop
         autoClose={3000}
         position='bottom-right'
-        toastClassName='rounded-lg dark:bg-slate-800 dark:text-white'
+        toastClassName='rounded-lg'
         closeButton={true}
       />
     </>
