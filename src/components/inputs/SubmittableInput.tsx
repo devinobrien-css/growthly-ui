@@ -51,6 +51,7 @@ export const SubmittableInput = ({
       )}
     >
       <input
+        type='email'
         placeholder={placeholder}
         className={cx(
           'w-2/3 px-4 py-2 font-light transition duration-300 ease-in-out',
