@@ -6,6 +6,7 @@ import { Inputs } from '../components/docs/Inputs';
 import { Pricing } from '../pages/Pricing/Pricing';
 import { Root } from '../pages/Root';
 import { Landing } from '../pages/Landing/Landing';
+import { Thanks } from '../pages/Thanks/Thanks';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '/pricing',
         element: <Pricing />,
+      },
+      {
+        path: '/thanks',
+        element: <Thanks />,
       },
       {
         path: '/docs',

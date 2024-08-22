@@ -22,7 +22,7 @@ export const Title = ({ className, children, size, ...rest }: TitleProps) => {
   return (
     <h1
       id={id}
-      className={cx(className, 'font-semibold transition-all', {
+      className={cx(className, 'font-semibold leading-10 transition-all', {
         'text-3xl sm:text-[44px]': size === 'xl',
         'text-xl sm:text-2xl': size === 'lg',
         'text-xl': size === 'md',
