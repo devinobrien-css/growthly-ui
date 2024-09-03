@@ -83,9 +83,7 @@ export const HeroSection = () => {
           <Paragraph className='hidden md:block'>
             Rapidly bring your design visions to life instantly{' '}
             <br className='hidden md:block' />
-            with our AI pattern generator. Effortlessly{' '}
-            <br className='hidden md:block' />
-            prototype and focus on creativity, not complexity.
+            with our AI pattern generator.
           </Paragraph>
 
           <Paragraph className='hidden sm:block md:hidden'>
@@ -106,7 +104,7 @@ export const HeroSection = () => {
           </SubmittableInput>
 
           <SubParagraph className='hidden md:block'>
-            *we will not disseminate your email to third parties
+            *Join the waitlist for <b>5 free patterns</b> on launch.
           </SubParagraph>
 
           <div className='mt-12 hidden gap-8 md:flex'>

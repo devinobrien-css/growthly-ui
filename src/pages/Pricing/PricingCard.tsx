@@ -13,7 +13,7 @@ interface PricingCardProps {
   isMostPopular?: boolean;
   isSelected?: boolean;
   setSelectedCard?: () => void;
-  price: number;
+  price: string;
   title: string;
   description: string;
   features: PricingFeatureType[];
@@ -82,8 +82,8 @@ export const PricingCard = ({
         </div>
       )}
 
-      <div className='flex gap-1 md:my-4'>
-        <Title size='xl'>${price}</Title>
+      <div className='mt-4 flex gap-1'>
+        <h1 className='text-4xl font-bold'>{price}</h1>
         <Paragraph
           className={cx('transition-all', {
             'text-white': isSelected,

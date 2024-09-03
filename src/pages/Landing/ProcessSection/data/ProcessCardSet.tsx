@@ -7,13 +7,13 @@ export const processCardsSet: ProcessCardProps[] = [
   {
     title: 'Get creative with your description',
     description:
-      'Simplify the pattern-making process with no formal training in pattern drafting',
+      'Generate intricate clothing patterns based on your description in seconds',
     Image: DescriptionImage,
   },
   {
     title: 'Choose your file format',
     description:
-      'Generate intricate clothing patterns based on your description in seconds',
+      'Export your file as a .DXF or .PDF, ready to be printed at home or sent to factory',
     Image: FileImage,
   },
   {

@@ -6,7 +6,6 @@ import { PricingCard } from './PricingCard';
 import { SubmittableInput } from '../../components/inputs/SubmittableInput';
 import gsap from 'gsap';
 import { useMutation } from '@tanstack/react-query';
-import { queryClient } from '../..';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -67,11 +66,9 @@ export const Pricing = () => {
         id={id}
         className='mx-auto max-w-screen-lg p-4 opacity-0 transition-all'
       >
-        <Title size='xl' className='text-center'>
-          Simple, transparent pricing
-        </Title>
-        <Paragraph className='py-4 text-center'>
-          Join the waitlist for 15 credits a month*, FREE.
+        <Paragraph className='m-auto py-4 text-center text-xl font-light md:w-1/2 md:text-4xl'>
+          Join the waitlist and get 5 patterns,{' '}
+          <span className='font-bold italic'>FREE</span> on launch.
         </Paragraph>
 
         <SubmittableInput
@@ -95,8 +92,7 @@ export const Pricing = () => {
         </div>
 
         <Paragraph className='mt-4 text-center text-xs'>
-          Choose the plan that fits your needs. No hidden fees. Cancel at any
-          time.
+          Subject to change, plans may vary upon release.
         </Paragraph>
       </div>
     </>

@@ -3,7 +3,7 @@ export interface PricingFeatureType {
   active: boolean;
 }
 export interface PricingDataType {
-  price: number;
+  price: string;
   isMostPopular?: boolean;
   title: string;
   description: string;
@@ -12,24 +12,24 @@ export interface PricingDataType {
 
 export const PricingData: PricingDataType[] = [
   {
-    price: 20,
+    price: '$20',
     title: 'Intro',
-    description: 'For most businesses that want to otpimize web queries',
+    description: 'For hobbyists and enthusiasts looking to work at home',
     features: [
       {
-        feature: 'All limited links',
+        feature: '10 patterns / month',
         active: true,
       },
       {
-        feature: 'Own analytics platform',
+        feature: 'PDF/JPG download',
         active: true,
       },
       {
-        feature: 'Chat support',
+        feature: 'One month history',
         active: true,
       },
       {
-        feature: 'Optimize hashtags',
+        feature: 'Up to 3 revisions',
         active: true,
       },
       {
@@ -39,24 +39,24 @@ export const PricingData: PricingDataType[] = [
     ],
   },
   {
-    price: 50,
+    price: '$50',
     title: 'Base',
-    description: 'For most businesses that want to otpimize web queries',
+    description: 'For most designers that want to rapidly prototype',
     features: [
       {
-        feature: 'All limited links',
+        feature: '20 patterns / month',
         active: true,
       },
       {
-        feature: 'Own analytics platform',
+        feature: 'DXF/PDF/JPG download',
         active: true,
       },
       {
-        feature: 'Chat support',
+        feature: 'Three month history',
         active: true,
       },
       {
-        feature: 'Optimize hashtags',
+        feature: 'Up to 10 revisions',
         active: true,
       },
       {
@@ -66,25 +66,25 @@ export const PricingData: PricingDataType[] = [
     ],
   },
   {
-    price: 75,
+    price: '$15',
     title: 'Early Signup',
     isMostPopular: true,
-    description: 'For most businesses that want to otpimize web queries',
+    description: 'For the best designers who decide sign up early',
     features: [
       {
-        feature: 'All limited links',
+        feature: '15 patterns / month',
         active: true,
       },
       {
-        feature: 'Own analytics platform',
+        feature: 'DXF/PDF/JPG download',
         active: true,
       },
       {
-        feature: 'Chat support',
+        feature: 'Three month history',
         active: true,
       },
       {
-        feature: 'Optimize hashtags',
+        feature: 'Up to 7 revisions',
         active: true,
       },
       {
@@ -94,24 +94,24 @@ export const PricingData: PricingDataType[] = [
     ],
   },
   {
-    price: 100,
-    title: 'Pro',
-    description: 'For most businesses that want to otpimize web queries',
+    price: 'Custom',
+    title: 'Enterprise',
+    description: 'For businesses that want to otpimize their workflow',
     features: [
       {
-        feature: 'All limited links',
+        feature: 'Unlimited patterns',
         active: true,
       },
       {
-        feature: 'Own analytics platform',
+        feature: 'DXF/PDF/JPG download',
         active: true,
       },
       {
-        feature: 'Chat support',
+        feature: 'Unlimited history',
         active: true,
       },
       {
-        feature: 'Optimize hashtags',
+        feature: 'Unlimited revisions',
         active: true,
       },
       {
